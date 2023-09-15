@@ -5,13 +5,17 @@ stages
 stage('Build') 
 {
 steps{
+script{
 sh "mvn package"
+}
 }
 }
 stage('Test') 
 {
 steps{
+script{
 sh "mvn test"
+}
 }
 }
 stage('Deploy') 
