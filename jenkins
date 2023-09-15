@@ -5,20 +5,19 @@ stages
 stage('Build') 
 {
 steps{
-mvn package
+sh "mvn package"
 }
 }
 stage('Test') 
 {
 steps{
-mvn test
+sh "mvn test"
 }
 }
 stage('Deploy') 
 {
 steps{
 http://3.14.255.230:8080/tomcat/tomcat/
-}
 }
 }
 }
