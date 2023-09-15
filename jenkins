@@ -5,20 +5,20 @@ stages
 stage('Build') 
 {
 steps{
-mvn 'package'
+mvn package
 }
 }
 stage('Test') 
 {
 steps{
-mvn 'test'
+mvn test
 }
 }
 stage('Deploy') 
 {
 steps{
-http://13.59.195.89:8080/tomcat/tomcat
+http://3.14.255.230:8080/tomcat/tomcat/
 }
 }
 }
-}
+
