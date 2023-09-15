@@ -1,27 +1,21 @@
-pipeline{
-agent any
-stages 
-{
-stage('Build') 
-{
-steps{
-script{
-sh "mvn package"
-}
-}
-}
-stage('Test') 
-{
-steps{
-script{
-sh "mvn test"
-}
-}
-}
-stage('Deploy') 
-{
-steps{
-http://3.14.255.230:8080/tomcat/tomcat/
-}
-}
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
