@@ -1,15 +1,18 @@
 pipeline {
     agent any
-
-    stages {
+    tools {
+        maven 'Maven 3.0.5 '
+        jdk 'jdk11'
+     }
+     stages {
         stage('Build') {
             steps {
-                "mvn package"
+                mvn package
             }
         }
         stage('Test') {
             steps {
-                "mvn test"
+                mvn test
             }
         }
         stage('Deploy') {
