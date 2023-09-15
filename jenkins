@@ -5,13 +5,13 @@ stages
 stage('Build') 
 {
 steps{
-mvn build
+mvn package
 }
 }
 stage('Test') 
 {
 steps{
-mvn package
+mvn test
 }
 }
 stage('Deploy') 
