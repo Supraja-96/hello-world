@@ -17,7 +17,7 @@ mvn package
 stage('Deploy') 
 {
 steps{
-http://18.218.128.184/tomcat/tomcat
+http://13.59.195.89:8080/webapp-2/tomcat/tomcat
 }
 }
 }
