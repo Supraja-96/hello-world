@@ -17,7 +17,7 @@ mvn test
 stage('Deploy') 
 {
 steps{
-http://13.59.195.89:8080/webapp-2/tomcat/tomcat
+http://13.59.195.89:8080/tomcat/tomcat
 }
 }
 }
